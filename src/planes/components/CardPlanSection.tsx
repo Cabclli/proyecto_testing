@@ -5,7 +5,6 @@ import {
   CardActions,
   CardContent,
   CardHeader,
-  CardMedia,
   Stack,
   Typography,
 } from "@mui/material";
@@ -24,16 +23,12 @@ const CardPlanSection = ({ item }: { item: Plan }) => {
       }}
       elevation={4}
     >
-      <CardMedia>
-        <img src={item.img} alt="" />
-      </CardMedia>
       <CardHeader title={item.title} subheader={item.description} />
-
       <Box>
         <CardContent>
           <Typography variant="caption">Desde</Typography>
           <Typography variant="h4" className="title">
-            {`USD$ ${item.price
+            {`AR$ ${item.price
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ".")},00`}
           </Typography>
@@ -45,14 +40,14 @@ const CardPlanSection = ({ item }: { item: Plan }) => {
             className="button contained"
             href={item.hrefSelectPlan}
           >
-            AGREGAR
+            Seleccionar
           </Button>
           <Button
             variant="text"
             className="button button-text"
             href={item.hrefViewMore}
           >
-            CONTACTAR
+            Ver más
           </Button>
         </CardActions>
       </Box>

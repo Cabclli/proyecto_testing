@@ -4,7 +4,7 @@ const options: ThemeOptions = {
   palette: {
     primary: {
       light: "#757ce8",
-      main: "#00147f",
+      main: "#3f50b5",
       dark: "#002884",
       contrastText: "#fff",
     },
@@ -15,8 +15,6 @@ const options: ThemeOptions = {
       contrastText: "#000",
     },
   },
-
-  
 };
 
 const theme = createTheme(options);
