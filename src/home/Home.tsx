@@ -14,7 +14,12 @@ import {
 const Home = () => {
   return (
     <Container maxWidth="lg" style={{ marginTop: "50px" }}>
-      <Stack direction="column" justifyContent="center" alignItems="center" width={"100%"}>
+      <Stack
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+        width={"100%"}
+      >
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
             <CardMedia

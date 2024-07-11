@@ -1,18 +1,11 @@
 import { Container } from "@mui/material";
 import PlansSection from "@/src/planes/components/PlansSection";
+import Footer from "../layout/components/Footer";
 
 const Plans = () => {
   return (
     <>
-      <Container
-        sx={{ mt: "2rem" }}
-        maxWidth={false}
-        className="background-light"
-      >
-        <Container>
-          <PlansSection />
-        </Container>
-      </Container>
+      <PlansSection />
     </>
   );
 };
